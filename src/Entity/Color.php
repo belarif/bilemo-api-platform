@@ -4,7 +4,9 @@ namespace App\Entity;
 
 use App\Repository\ColorRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
 
+#[ApiResource]
 #[ORM\Entity(repositoryClass: ColorRepository::class)]
 class Color
 {
